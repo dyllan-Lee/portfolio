@@ -13,9 +13,9 @@
                 <div class="nav-c"></div>
               </div>
               <div class="nav-txt">
-                <p>양주시립 미술관</p>
-                <p></p>
-                <p></p>
+                <p class="nav-active">양주시립 장욱진 미술관</p>
+                <p>뱅골프 코리아</p>
+                <p>서문시장 야시장</p>
               </div>
             </li>
             <li class="page-wrap"></li>
@@ -34,12 +34,22 @@
 </script>
 
 <style scoped>
-  div {
+  section {
     width: 100%;
     height: 100vh;
     /* background-color:beige */
+    border-bottom: 1px solid rgba(80, 80, 80, 0.1);
   }
-
+  p{
+    text-align: start;
+    margin-left: 60px;
+    font-weight: bold;
+    opacity: 0.2;
+    margin-bottom: 64px;
+  }
+  .nav-active{
+    opacity: 1;
+  }
   h1 {
     margin-left: 6.5%;
     font-size: 60px;
@@ -48,34 +58,53 @@
     text-align: start;
     margin-top: 50px;
   }
+  .pr-wrap{
+    margin-top: 130px;
+  }
+  .pr-wrap ul{
+    display: flex;
+    justify-content: space-between;
+  }
   .nav-wrap{
     display: flex;
   }
   .nav-bar {
     width: 3px;
     height: 200px;
-    background-color: black;
-    margin-left: 30px;
+    background-color: #808080;
+    margin-left: 60px;
     position: relative;
   }
   .nav-c{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: #036;
   }
   .nav-c:first-child{
     position: absolute;
-    left: -6px;
+    left: -8px;
   }
   .nav-c:nth-child(2){
     position: absolute;
-    left: -6px;
-    top: 70px;
+    left: -8px;
+    top: 90px;
+    background-color: #DAE1F0;
   }
   .nav-c:nth-child(3){
     position: absolute;
-    left: -6px;
-    top: 140px;
+    left: -8px;
+    top: 180px;
+    background-color: #DAE1F0;
   }
+  .nav-wrap{
+    width: 20%;
+  }
+  .page-wrap{
+    width: 40%;
+  }
+  .txt-wrap{
+    width: 33%;
+  }
+
 </style>
