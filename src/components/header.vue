@@ -50,5 +50,7 @@ export default {
 </script>
 
 <style scoped>
-
+ul{
+  display: flex;
+}
 </style>
