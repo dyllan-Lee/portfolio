@@ -1,15 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <headerc />
+  <intro id='intro' />
+  <about id='About' />
+  <project id='Project' />
+  <cloning id='Cloning' />
+  <contact id='Contact' />
+  <div></div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import headerc from './components/header.vue'
+import intro from './components/intro.vue'
+import about from './components/about.vue'
+import project from './components/project.vue'
+import cloning from './components/cloning.vue'
+import contact from './components/contact.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    headerc,
+    intro,
+    about,
+    project,
+    cloning,
+    contact,
   }
 }
 </script>
