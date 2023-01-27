@@ -18,11 +18,50 @@
                 <p>서문시장 야시장</p>
               </div>
             </li>
-            <li class="page-wrap"></li>
-            <li class="txt-wrap"></li>
+            <li class="page-wrap"><img src="../img/yangju.png" alt="" class="yangju"></li>
+            <li class="txt-wrap">
+              <h3>Team project</h3>
+              <h3>맡은 역할 : 팀장</h3>
+              <h3>담당한 구역 : 헤더 , 메인 섹션 1~2 , 공지사항 전체</h3>
+              <h3>사용 기술 : html5, css3, js, swiper.js, mysql node.js, aws</h3>
+              <h3>개발 기간 : 2022-11-07~2022-12-31</h3>
+              <h3 style="display:flex">
+                <button type="button"
+                    onclick="location.href='http://projectteambogo-env.eba-m9fmyhxs.us-east-1.elasticbeanstalk.com/'">더보기</button> &nbsp;
+                <a href="https://github.com/dyllan-Lee/project_team_bogo"><img src="../img/pngegg1.png" alt="">
+                  <h4>github</h4>
+                </a></h3>
+            </li>
           </ul>
         </div>
       </article>
+      <article>
+        <h1>Project</h1>
+        <div class="pr-wrap">
+          <ul>
+            <li class="nav-wrap">
+              <div class="nav-bar">
+                <div class="nav-c"></div>
+                <div class="nav-c"></div>
+                <div class="nav-c"></div>
+              </div>
+              <div class="nav-txt">
+                <p>양주시립 장욱진 미술관</p>
+                <p class="nav-active">뱅골프 코리아</p>
+                <p>서문시장 야시장</p>
+              </div>
+            </li>
+            <li class="page-wrap"><img src="../img/yangju.png" alt="" class="yangju"></li>
+            <li class="txt-wrap">
+              <h3>Personal project</h3>
+              <h3>담당한 구역 : 전체</h3>
+              <h3>사용 기술 : html5, css3, js, mysql node.js, aws</h3>
+              <h3>개발 기간 : 2022-11-07~2022-12-31</h3>
+            </li>
+          </ul>
+        </div>
+      </article>
+
     </section>
   </div>
 </template>
@@ -35,21 +74,37 @@
 
 <style scoped>
   section {
+    /* background-color:beige */
+  }
+
+  article {
+    border-bottom: 1px solid rgba(80, 80, 80, 0.1);
     width: 100%;
     height: 100vh;
-    /* background-color:beige */
-    border-bottom: 1px solid rgba(80, 80, 80, 0.1);
   }
-  p{
+
+  p {
     text-align: start;
     margin-left: 60px;
     font-weight: bold;
     opacity: 0.2;
     margin-bottom: 64px;
   }
-  .nav-active{
+
+  a {
+    display: flex;
+  }
+
+  h4 {
+
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .nav-active {
     opacity: 1;
   }
+
   h1 {
     margin-left: 6.5%;
     font-size: 60px;
@@ -58,16 +113,28 @@
     text-align: start;
     margin-top: 50px;
   }
-  .pr-wrap{
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .pr-wrap {
     margin-top: 130px;
   }
-  .pr-wrap ul{
+
+  .pr-wrap ul {
     display: flex;
     justify-content: space-between;
   }
-  .nav-wrap{
+
+  .nav-wrap {
     display: flex;
   }
+
   .nav-bar {
     width: 3px;
     height: 200px;
@@ -75,36 +142,56 @@
     margin-left: 60px;
     position: relative;
   }
-  .nav-c{
+
+  .nav-c {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #036;
   }
-  .nav-c:first-child{
+
+  .nav-c:first-child {
     position: absolute;
     left: -8px;
   }
-  .nav-c:nth-child(2){
+
+  .nav-c:nth-child(2) {
     position: absolute;
     left: -8px;
     top: 90px;
     background-color: #DAE1F0;
   }
-  .nav-c:nth-child(3){
+
+  .nav-c:nth-child(3) {
     position: absolute;
     left: -8px;
     top: 180px;
     background-color: #DAE1F0;
   }
-  .nav-wrap{
+
+  .nav-wrap {
     width: 20%;
   }
-  .page-wrap{
+
+  .page-wrap {
     width: 40%;
   }
-  .txt-wrap{
+
+  .txt-wrap {
     width: 33%;
   }
 
+  .yangju {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  button{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
 </style>
