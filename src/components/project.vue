@@ -2,20 +2,20 @@
   <!-- <h1 id='Project'>project page</h1> -->
   <div>
     <section>
-      <article>
+      <article id="yang">
         <h1>Project</h1>
         <div class="pr-wrap">
           <ul>
             <li class="nav-wrap">
               <div class="nav-bar">
-                <div class="nav-c"></div>
-                <div class="nav-c"></div>
-                <div class="nav-c"></div>
+                <div class="nav-c gotosec" v-on:click='gosection' data-target="yang"></div>
+                <div class="nav-c nav-ac gotosec" v-on:click='gosection' data-target="bang"></div>
+                <div class="nav-c nav-ac gotosec" v-on:click='gosection' data-target="seomun"></div>
               </div>
               <div class="nav-txt">
-                <p class="nav-active">양주시립 장욱진 미술관</p>
-                <p>뱅골프 코리아</p>
-                <p>서문시장 야시장</p>
+                <p class="nav-active gotosec" v-on:click='gosection' data-target="yang">양주시립 장욱진 미술관</p>
+                <p class="gotosec" v-on:click='gosection' data-target="bang">뱅골프 코리아</p>
+                <p class="gotosec" v-on:click='gosection' data-target="seomun">서문시장 야시장</p>
               </div>
             </li>
             <li class="page-wrap"><img src="../img/yangju.png" alt="" class="yangju"></li>
@@ -27,7 +27,8 @@
               <h3>개발 기간 : 2022-11-07~2022-12-31</h3>
               <h3 style="display:flex">
                 <button type="button"
-                    onclick="location.href='http://projectteambogo-env.eba-m9fmyhxs.us-east-1.elasticbeanstalk.com/'">더보기</button> &nbsp;
+                  onclick="location.href='http://projectteambogo-env.eba-m9fmyhxs.us-east-1.elasticbeanstalk.com/'">더보기</button>
+                &nbsp; <h4>&</h4>
                 <a href="https://github.com/dyllan-Lee/project_team_bogo"><img src="../img/pngegg1.png" alt="">
                   <h4>github</h4>
                 </a></h3>
@@ -35,28 +36,64 @@
           </ul>
         </div>
       </article>
-      <article>
+      <article id="bang">
         <h1>Project</h1>
         <div class="pr-wrap">
           <ul>
             <li class="nav-wrap">
               <div class="nav-bar">
-                <div class="nav-c"></div>
-                <div class="nav-c"></div>
-                <div class="nav-c"></div>
+                <div class="nav-c gotosec nav-ac" v-on:click='gosection' data-target="yang"></div>
+                <div class="nav-c gotosec" v-on:click='gosection' data-target="bang"></div>
+                <div class="nav-c nav-ac gotosec" v-on:click='gosection' data-target="seomun"></div>
               </div>
               <div class="nav-txt">
-                <p>양주시립 장욱진 미술관</p>
-                <p class="nav-active">뱅골프 코리아</p>
-                <p>서문시장 야시장</p>
+                <p class="gotosec" v-on:click='gosection' data-target="yang" >양주시립 장욱진 미술관</p>
+                <p class="gotosec nav-active" v-on:click='gosection' data-target="bang" >뱅골프 코리아</p>
+                <p class="gotosec" v-on:click='gosection' data-target="seomun" >서문시장 야시장</p>
               </div>
             </li>
-            <li class="page-wrap"><img src="../img/yangju.png" alt="" class="yangju"></li>
+            <li class="page-wrap"><img src="../img/bang.png" alt="" class="yangju"></li>
             <li class="txt-wrap">
               <h3>Personal project</h3>
               <h3>담당한 구역 : 전체</h3>
               <h3>사용 기술 : html5, css3, js, mysql node.js, aws</h3>
-              <h3>개발 기간 : 2022-11-07~2022-12-31</h3>
+              <h3>개발 기간 : 2022-10-20~2022-11-21</h3>
+              <h3 style="display:flex">
+                <button type="button" onclick="">더보기</button> &nbsp; <h4>&</h4>
+                <a href="https://github.com/dyllan-Lee/projectbang"><img src="../img/pngegg1.png" alt="">
+                  <h4>github</h4>
+                </a></h3>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article id="seomun">
+        <h1>Project</h1>
+        <div class="pr-wrap">
+          <ul>
+            <li class="nav-wrap">
+              <div class="nav-bar">
+                <div class="nav-c gotosec nav-ac" v-on:click='gosection' data-target="yang"></div>
+                <div class="nav-c gotosec nav-ac" v-on:click='gosection' data-target="bang"></div>
+                <div class="nav-c gotosec" v-on:click='gosection' data-target="seomun"></div>
+              </div>
+              <div class="nav-txt">
+                <p class="gotosec" v-on:click='gosection' data-target="yang">양주시립 장욱진 미술관</p>
+                <p class="gotosec" v-on:click='gosection' data-target="bang">뱅골프 코리아</p>
+                <p class="nav-active gotosec" v-on:click='gosection' data-target="seomun">서문시장 야시장</p>
+              </div>
+            </li>
+            <li class="page-wrap"><img src="../img/seomun.png" alt="" class="yangju"></li>
+            <li class="txt-wrap">
+              <h3>Personal project</h3>
+              <h3>담당한 구역 : 전체</h3>
+              <h3>사용 기술 : html5, css3</h3>
+              <h3>개발 기간 : 2022-10-03~2022-10-20</h3>
+              <h3 style="display:flex">
+                <button type="button" onclick="">더보기</button> &nbsp; <h4>&</h4>
+                <a href="https://github.com/dyllan-Lee/project_seomun"><img src="../img/pngegg1.png" alt="">
+                  <h4>github</h4>
+                </a></h3>
             </li>
           </ul>
         </div>
@@ -68,7 +105,18 @@
 
 <script>
   export default {
-
+    methods: {
+      gosection(e) {
+        if (!e.target.matches('.gotosec')) return;
+        e.preventDefault();
+        const sec = document.querySelector('#' + e.target.dataset.target);
+        if (sec) {
+          sec.scrollIntoView({
+            behavior: "smooth"
+          })
+        }
+      },
+    }
   }
 </script>
 
@@ -82,7 +130,9 @@
     width: 100%;
     height: 100vh;
   }
-
+  .gotosec{
+    cursor: pointer;
+  }
   p {
     text-align: start;
     margin-left: 60px;
@@ -95,11 +145,6 @@
     display: flex;
   }
 
-  h4 {
-
-    font-size: 24px;
-    line-height: 50px;
-  }
 
   .nav-active {
     opacity: 1;
@@ -120,6 +165,12 @@
     text-align: start;
     width: 70%;
     margin-bottom: 20px;
+  }
+
+  h4 {
+    color: #000;
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .pr-wrap {
@@ -159,13 +210,15 @@
     position: absolute;
     left: -8px;
     top: 90px;
-    background-color: #DAE1F0;
   }
 
   .nav-c:nth-child(3) {
     position: absolute;
     left: -8px;
     top: 180px;
+  }
+
+  .nav-ac {
     background-color: #DAE1F0;
   }
 
@@ -187,11 +240,12 @@
     /* height: 100%; */
   }
 
-  button{
+  button {
     width: 150px;
     height: 50px;
     background-color: #fff;
     color: #000;
     cursor: pointer;
+    font-size: 20px;
   }
 </style>

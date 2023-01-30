@@ -2,6 +2,7 @@
   <!-- <headerc /> -->
   <intro />
   <about />
+  <!-- <project /> -->
   <project />
   <cloning />
   <contact />
@@ -12,9 +13,10 @@
   import headerc from './components/header.vue'
   import intro from './components/intro.vue'
   import about from './components/about.vue'
-  import project from './components/project.vue'
+  // import project from './components/project.vue'
   import cloning from './components/cloning.vue'
   import contact from './components/contact.vue'
+  import project from './components/ProjectSec.vue'
 
   export default {
     name: 'App',

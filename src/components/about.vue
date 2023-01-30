@@ -66,7 +66,7 @@
       <ul>
         <li>
           <h4 class="skill-left">잘 다룰수 있는</h4>
-          <img src="../img/Group13.png" alt=""  class="skill-left">
+          <img src="../img/Group13.png" alt="" class="skill-left">
         </li>
         <li>
           <h4>어느정도 다루는</h4>
@@ -117,10 +117,12 @@
     color: #036;
     margin-bottom: 40px;
   }
-  h4{
+
+  h4 {
     font-size: 20px;
     margin-block: 20px;
   }
+
   h5 {
     font-size: 32px;
     font-weight: bold;
@@ -180,7 +182,8 @@
     width: 33%;
     text-align: start;
   }
-  .skill-left{
+
+  .skill-left {
     margin-left: 20%;
   }
 </style>
