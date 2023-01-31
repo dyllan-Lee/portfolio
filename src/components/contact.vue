@@ -4,9 +4,9 @@
     <div class="pr-wrap">
       <div class="cn-wrap">
         <h2><img src="" alt="">Name : 이 석 진</h2>
-        <h2><img src="../img/email-con.png" alt=""> &nbsp&nbsp dltjrwls0802@gmail.com</h2>
-        <h2><img src="../img/phone1.png" alt=""> &nbsp&nbsp 010 - 9290- 8159</h2>
-        <h2><a href=" https://github.com/dyllan-Lee"><img src="../img/pngegg1.png" alt=""> &nbsp&nbsp
+        <h2><img src="../img/email-con.png" alt="">  dltjrwls0802@gmail.com</h2>
+        <h2><img src="../img/phone1.png" alt="">  010 - 9290- 8159</h2>
+        <h2><a href=" https://github.com/dyllan-Lee"><img src="../img/pngegg1.png" alt=""> 
             https://github.com/dyllan-Lee</a></h2>
       </div>
     </div>

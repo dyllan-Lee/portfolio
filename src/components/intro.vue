@@ -49,12 +49,10 @@
   .intro-wrap {
     width: 50%;
     height: 100vh;
-    /* background-color:pink; */
-    /* border: 1px solid #000; */
     position: relative;
   }
 
-  .fadeA-enter-from {
+  /* .fadeA-enter-from {
     opacity: 0;
   }
 
@@ -82,7 +80,7 @@
     font-size: 48px;
     font-weight: bold;
     position: fixed;
-  }
+  } */
 
   section {
     display: flex;
@@ -150,5 +148,17 @@
     flex-direction: column;
     height: 95vh;
     margin-top: 3vh;
+  }
+
+  @media(max-width: 600px) {
+    .intro-u {
+      display: none;
+    }
+
+    .intro-wrap {
+      width: 100%;
+      height: 100%;
+    }
+    
   }
 </style>
