@@ -16,17 +16,13 @@
         </div>
       </div>
     </div> -->
-    <div class="detalis" v-for="item in projectDetails" :key="item">
+    <div class="detalis" v-for="(item,index) in projectDetails" :key="item">
       <project-con :img='item.img' :sub='item.sub' :role='item.rol' :section='item.sec' :skill='item.stak'
-        :devtime='item.devt' :githubUrl='item.github' :title='item.tit' />
+        :devtime='item.devt' :githubUrl='item.github' :title='item.tit'  :current="'id'+index" :num='index'/>
     </div>
   </div>
 </template>
 <script>
-  import {
-    onMounted
-  } from "vue";
-
   import projectCon from './ProjectCon.vue';
 
   export default {
@@ -46,7 +42,7 @@
         },
         {
           img: require('@/img/bang.png'),
-          tit: 'Personal Project',
+          sub: 'Personal Project',
           rol: '개인',
           sec: '전체',
           stak: 'html5, css3, js, mysql node.js, aws',
@@ -56,7 +52,7 @@
         },
         {
           img: require('@/img/seomun.png'),
-          tit: 'Personal Project',
+          sub: 'Personal Project',
           rol: '개인',
           sec: '전체',
           stak: 'html5, css3',
@@ -65,9 +61,7 @@
           tit: '서문시장 야시장',
         },
       ]
-      onMounted(() => {
 
-      })
       return {
         projectDetails,
       }
