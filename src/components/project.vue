@@ -29,7 +29,7 @@
                 <button type="button"
                   onclick="location.href='http://projectteambogo-env.eba-m9fmyhxs.us-east-1.elasticbeanstalk.com/'">더보기</button>
                 &nbsp; <h4>&</h4>
-                <a href="https://github.com/dyllan-Lee/project_team_bogo"><img src="../img/pngegg1.png" alt="">
+                <a href="https://github.com/dyllan-Lee/project_team_bogo" target="_blank"><img src="../img/pngegg1.png" alt="">
                   <h4>github</h4>
                 </a></h3>
             </li>

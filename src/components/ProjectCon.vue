@@ -12,7 +12,8 @@
               <div class="nav-c gotosec" :class="num==2?'':'nav-ac'" v-on:click='gosection' data-target="id2"></div>
             </div>
             <div class="nav-txt">
-              <p class="gotosec" :class="num==0?'nav-active':''" v-on:click='gosection' data-target="id0">양주시립 장욱진 미술관</p>
+              <p class="gotosec" :class="num==0?'nav-active':''" v-on:click='gosection' data-target="id0">양주시립 장욱진 미술관
+              </p>
               <p class="gotosec" :class="num==1?'nav-active':''" v-on:click='gosection' data-target="id1">뱅골프 코리아</p>
               <p class="gotosec" :class="num==2?'nav-active':''" v-on:click='gosection' data-target="id2">서문시장 야시장</p>
             </div>
@@ -25,7 +26,7 @@
             <h3>사용 기술 : {{skill}}</h3>
             <h3>개발 기간 : {{devtime}}</h3>
             <h3 style="display:flex">
-              <a :href="githubUrl"><img src="../img/pngegg1.png" alt="">
+              <a :href="githubUrl" target="_blank"><img src="../img/pngegg1.png" alt="">
                 &nbsp <h4>Github </h4>
               </a></h3>
           </li>
@@ -46,7 +47,7 @@
       devtime: String,
       githubUrl: String,
       current: String,
-      num:Number,
+      num: Number,
     },
     methods: {
       gosection(e) {
@@ -163,7 +164,7 @@
   }
 
   .nav-wrap {
-    width: 20%;
+    width: 27%;
   }
 
   .page-wrap {
@@ -171,7 +172,7 @@
   }
 
   .txt-wrap {
-    width: 33%;
+    width: 30%;
   }
 
   .yangju {
@@ -187,5 +188,64 @@
     color: #000;
     cursor: pointer;
     font-size: 20px;
+  }
+  @media(max-width:1280px){
+    h1{
+      font-size: 48px;
+    }
+  }
+  @media(max-width:1120px) {
+    .pr-wrap ul {
+      flex-wrap: wrap;
+    }
+
+    .pr-wrap ul {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .nav-wrap {
+      width: 30%;
+    }
+
+    .page-wrap {
+      width: 50%;
+      margin-left: 5%;
+    }
+
+    .txt-wrap {
+      width: 90%;
+      margin-left: 10%;
+      margin-top: 30px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media(max-width:1024px) {
+    .nav-wrap {
+      width: 40%;
+    }
+  }
+  @media(max-width:767px){
+    .nav-wrap{
+      display: none;
+    }
+    .page-wrap{
+      margin-left: 10%;
+    }
+    .pr-wrap{
+      margin-top: 30px;
+    }
+    h1{
+    width: 285px;
+    /* margin-top: 50px; */
+    margin-left: 20%;
+    }
+    article{
+      height: 100%;
+    }
   }
 </style>

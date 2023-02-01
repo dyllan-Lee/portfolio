@@ -7,7 +7,7 @@
       <ul>
         <div class="w33 mt50">
           <h1 id='About'>About me</h1>
-          <div class="circle"></div>
+          <img src="../img/elipse6.png" class="circle">
           <div class="txt-wrap">
             <h2>Step Up 하는</h2>
             <h2>개발자 이석진 입니다.</h2>
@@ -35,49 +35,53 @@
           </div>
         </div>
         <div class="w33 mtre">
+          <h3 class="EP">Experience</h3>
           <div class="EP-wrap">
-            <h3>Experience</h3>
-            <p>자연대학교 23대학생회부원<br>
-              <p class="date">-2013.03~12</p>
-            </p><br>
-            <p>자연대학교 26대학생회 홍보부차장<br>
-              <p class="date">-2016.03~12</p>
-            </p><br>
-            <p>경영대학교 9대 학생회선거운동본부장<br>
-              <p class="date">-2016.11</p>
-            </p><br>
-            <p>45대 총학생회 보궐선거운동원<p class="date">-2017.02~04</p>
-            </p><br>
-            <p>상명대학교 축제기획단<br>
-              <p class="date">-2017.05~06</p>
-            </p><br>
-            <p>소비자주거학과 학생회 총무<br>
-              <p class="date">-2018.03~12</p>
-            </p><br>
-            <p>Kaplan International school Ki Harvard Square<br>
-              <p class="date">-2019.07~2020.01</p>
-            </p><br>
+            <div class="EP-flex">
+              <p>자연대학교 23대학생회부원<br>
+                <p class="date">-2013.03~12</p>
+              </p><br>
+              <p>자연대학교 26대학생회 홍보부차장<br>
+                <p class="date">-2016.03~12</p>
+              </p><br>
+              <p>경영대학교 9대 학생회선거운동본부장<br>
+                <p class="date">-2016.11</p>
+              </p><br>
+              <p>45대 총학생회 보궐선거운동원<p class="date">-2017.02~04</p>
+              </p><br>
+            </div>
+            <div class="EP-flex">
+              <p>상명대학교 축제기획단<br>
+                <p class="date">-2017.05~06</p>
+              </p><br>
+              <p>소비자주거학과 학생회 총무<br>
+                <p class="date">-2018.03~12</p>
+              </p><br>
+              <p>Kaplan International school Ki Harvard Square<br>
+                <p class="date">-2019.07~2020.01</p>
+              </p><br>
+            </div>
           </div>
         </div>
       </ul>
+      <div class="skill">
+        <h5 style="text-align : start">Skill</h5>
+        <ul>
+          <li>
+            <h4 class="skill-left">잘 다룰수 있는</h4>
+            <img src="../img/Group13.png" alt="" class="skill-left">
+          </li>
+          <li>
+            <h4>어느정도 다루는</h4>
+            <img src="../img/Group12.png" alt="">
+          </li>
+          <li>
+            <h4>미숙해도 할 수 있는</h4>
+            <img src="../img/Group11.png" alt="">
+          </li>
+        </ul>
+      </div>
     </article>
-    <div class="skill">
-      <h5 style="text-align : start">Skill</h5>
-      <ul>
-        <li>
-          <h4 class="skill-left">잘 다룰수 있는</h4>
-          <img src="../img/Group13.png" alt="" class="skill-left">
-        </li>
-        <li>
-          <h4>어느정도 다루는</h4>
-          <img src="../img/Group12.png" alt="">
-        </li>
-        <li>
-          <h4>미숙해도 할 수 있는</h4>
-          <img src="../img/Group11.png" alt="">
-        </li>
-      </ul>
-    </div>
   </section>
 </template>
 
@@ -161,12 +165,10 @@
   }
 
   .circle {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: black;
+    display: block;
     margin-left: 20%;
-    margin-top: 60px
+    margin-top: 60px;
+    width: 55%;
   }
 
   .txt-wrap {
@@ -185,5 +187,110 @@
 
   .skill-left {
     margin-left: 20%;
+  }
+
+  @media(max-width:1280px) {
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    h5{
+      font-size: 24px;
+    }
+    h4{
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media(max-width:1024px) {
+    article ul {
+      flex-wrap: wrap;
+    }
+
+    .w33 {
+      width: 50%;
+    }
+
+    .w33:nth-child(3) {
+      width: 100%;
+    }
+
+    section {
+      height: 100%;
+    }
+
+    .EP-wrap {
+      margin-left: 10%;
+      display: flex;
+    }
+
+    .EP-flex {
+      width: 50%;
+    }
+
+    .EP {
+      margin-left: 10%;
+    }
+
+    h5 {
+      margin-left: 10%;
+    }
+
+    .skill ul li {
+      width: 50%;
+    }
+
+    .skill ul li:nth-child(3) {
+      margin-left: 10%;
+    }
+  }
+
+  @media(max-width:767px) {
+    .w33 {
+      width: 100%;
+    }
+    .w33:nth-child(2){
+      margin-left: 10%;
+    }
+    .circle {
+      display: block;
+      margin: 40px auto;
+      width: 45%;
+    }
+    .skill ul li:nth-child(2){
+      margin-left: 10%;
+    }
+    .mtre{
+      margin-top: 40px;
+    }
+    
+  }
+  @media(max-width:400px){
+    .EP-wrap{
+      flex-direction: column;
+    }
+    .EP-flex{
+      width: 100%;
+    }
+    .skill img{
+      width: 100%;
+    }
+    .skill-left{
+      margin-left: 10%;
+    }
+    .skill ul li{
+      width: 80%;
+    }
   }
 </style>

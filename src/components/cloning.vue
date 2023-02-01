@@ -6,19 +6,23 @@
         <li class="do">
           <div class="img-wrap">
             <img src="../img/dosirak.png" alt=""></div>
-          <h3 class="title">도시락통 &nbsp<a href="http://dyllan.dothome.co.kr/2022-10-04-dosiraktong/%EB%8F%84%EC%8B%9C%EB%9D%BD%ED%86%B5%EC%B5%9C%EC%A2%85.html"><img src="../img/Group3.png" alt="" width="100" height="40"></a></h3>
+          <h3 class="title">도시락통 &nbsp<a
+              href="http://dyllan.dothome.co.kr/2022-10-04-dosiraktong/%EB%8F%84%EC%8B%9C%EB%9D%BD%ED%86%B5%EC%B5%9C%EC%A2%85.html"
+              target="_blank"><img src="../img/Group3.png" alt="" width="100" height="40"></a></h3>
           <p class="devt">제작 기간 : 2022-10-07~2022-10-11</p>
         </li>
         <li class="sh">
           <div class="img-wrap">
             <img src="../img/shouse.png" alt=""></div>
-          <h3 class="title">싱그러운집 &nbsp<a href="http://dyllan.dothome.co.kr/2022-10-11%20shouse/main.html"><img src="../img/Group3.png" alt="" width="100" height="40"></a></h3>
+          <h3 class="title">싱그러운집 &nbsp<a href="http://dyllan.dothome.co.kr/2022-10-11%20shouse/main.html"
+              target="_blank"><img src="../img/Group3.png" alt="" width="100" height="40"></a></h3>
           <p class="devt">제작 기간 : 2022-10-12~2022-10-20</p>
         </li>
         <li class="ri">
           <div class="img-wrap">
             <img src="../img/richmond.png" alt=""></div>
-          <h3 class="title">더 리치먼드 평창 &nbsp<a href="http://dyllan.dothome.co.kr/2022-10-20%20richmond/index1.html"><img src="../img/Group3.png" alt="" width="100" height="40"></a></h3>
+          <h3 class="title">더 리치먼드 평창 &nbsp<a href="http://dyllan.dothome.co.kr/2022-10-20%20richmond/index1.html"
+              target="_blank"><img src="../img/Group3.png" alt="" width="100" height="40"></a></h3>
           <p class="devt">제작 기간 : 2022-10-20~2022-10-31</p>
         </li>
       </ul>
@@ -78,5 +82,54 @@
     font-size: 24px;
     font-weight: bold;
     margin-top: 40px;
+  }
+
+  @media(max-width:1280px) {
+    h1 {
+      font-size: 48px;
+    }
+
+    ul {
+      width: 90%;
+    }
+  }
+
+  @media(max-width:1024px) {
+    article {
+      height: 100%;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    ul li {
+      width: 50%;
+      margin: 20px auto;
+      border-bottom: 1px solid rgba(80, 80, 80, 0.1);
+    }
+
+    .title {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+
+    .devt {
+      font-size: 20px;
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @media(max-width:600px){
+     ul li{
+      width: 100%;
+      margin: 20px auto;
+     }
+  }
+  @media(max-width:400px){
+    .img-wrap img{
+      width: 100%;
+    }
   }
 </style>

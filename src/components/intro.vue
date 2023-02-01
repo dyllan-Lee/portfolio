@@ -52,36 +52,6 @@
     position: relative;
   }
 
-  /* .fadeA-enter-from {
-    opacity: 0;
-  }
-
-  .fadeA-enter-active {
-    transition: opacity 1s ease-in-out;
-  }
-
-  .fadeA-enter-to {
-    opacity: 1;
-  }
-
-  .fadeA-leave-to {
-    opacity: 0;
-  }
-
-  .fadeA-leave-active {
-    transition: opacity 1s ease-in-out;
-  }
-
-  h2 {
-    width: 100%;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 48px;
-    font-weight: bold;
-    position: fixed;
-  } */
-
   section {
     display: flex;
     border-bottom: 1px solid rgba(80, 80, 80, 0.1);
@@ -89,7 +59,6 @@
 
   div>img {
     width: 100%;
-    /* margin-top: 10%; */
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -151,6 +120,14 @@
   }
 
   @media(max-width: 600px) {
+    section {
+      flex-direction: column;
+    }
+
+    .subtitle-wrap {
+      height: 55vh;
+    }
+
     .intro-u {
       display: none;
     }
@@ -159,6 +136,63 @@
       width: 100%;
       height: 100%;
     }
-    
+
+    .txt {
+      width: 70%;
+      margin: 10% auto;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 48px;
+      font-weight: bold;
+    }
   }
+
+  @media(max-width: 400px) {
+    p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+  }
+
+  /* .fadeA-enter-from {
+    opacity: 0;
+  }
+
+  .fadeA-enter-active {
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fadeA-enter-to {
+    opacity: 1;
+  }
+
+  .fadeA-leave-to {
+    opacity: 0;
+  }
+
+  .fadeA-leave-active {
+    transition: opacity 1s ease-in-out;
+  }
+
+  h2 {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    position: fixed;
+  } */
 </style>
