@@ -7,21 +7,21 @@
       <ul>
         <div class="w33 mt50">
           <h1 id='About'>About me</h1>
-          <img src="../img/elipse6.png" class="circle">
+          <img src="../img/elipse6.png" class="circle" data-aos="fade-up" data-aos-duration="1000">
           <div class="txt-wrap">
             <h2>Step Up 하는</h2>
             <h2>개발자 이석진 입니다.</h2>
           </div>
         </div>
         <div class="w33 mtre">
-          <div class="PI-wrap">
+          <div class="PI-wrap" data-aos="fade-up" data-aos-duration="1000">
             <h3>Personal Info</h3>
             <p>1994.08.02</p><br>
             <p>서울</p><br>
             <p>dltjrwls0802@gmail.com</p><br>
             <p>010-9290-8159</p><br>
           </div>
-          <div class="ED-wrap">
+          <div class="ED-wrap" data-aos="fade-up" data-aos-duration="1000">
             <h3>Education</h3>
             <p>서울 대진고등학교 졸업<br>
               <p class="date">-2013.02</p>
@@ -35,8 +35,8 @@
           </div>
         </div>
         <div class="w33 mtre">
-          <h3 class="EP">Experience</h3>
-          <div class="EP-wrap">
+          <h3 class="EP"  data-aos="fade-up" data-aos-duration="1000">Experience</h3>
+          <div class="EP-wrap" data-aos="fade-up" data-aos-duration="1000">
             <div class="EP-flex">
               <p>자연대학교 23대학생회부원<br>
                 <p class="date">-2013.03~12</p>
@@ -64,7 +64,7 @@
           </div>
         </div>
       </ul>
-      <div class="skill">
+      <div class="skill" data-aos="fade-up" data-aos-duration="1000">
         <h5 style="text-align : start">Skill</h5>
         <ul>
           <li>
@@ -202,12 +202,15 @@
       font-size: 24px;
       margin-bottom: 30px;
     }
-    h5{
+
+    h5 {
       font-size: 24px;
     }
-    h4{
+
+    h4 {
       font-size: 18px;
     }
+
     p {
       font-size: 16px;
     }
@@ -260,37 +263,50 @@
     .w33 {
       width: 100%;
     }
-    .w33:nth-child(2){
+
+    .w33:nth-child(2) {
       margin-left: 10%;
     }
+
     .circle {
       display: block;
       margin: 40px auto;
       width: 45%;
     }
-    .skill ul li:nth-child(2){
+
+    .skill ul li:nth-child(2) {
       margin-left: 10%;
     }
-    .mtre{
+
+    .mtre {
       margin-top: 40px;
     }
-    
+
   }
-  @media(max-width:400px){
-    .EP-wrap{
+
+  @media(max-width:400px) {
+    .EP-wrap {
       flex-direction: column;
     }
-    .EP-flex{
+
+    .EP-flex {
       width: 100%;
     }
-    .skill img{
+
+    .skill img {
       width: 100%;
     }
-    .skill-left{
+
+    .skill-left {
       margin-left: 10%;
     }
-    .skill ul li{
+
+    .skill ul li {
       width: 80%;
+    }
+
+    h1 {
+      font-size: 32px;
     }
   }
 </style>

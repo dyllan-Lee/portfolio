@@ -4,7 +4,7 @@
       <h1>Project</h1>
       <div class="pr-wrap">
         <ul>
-          <li class="nav-wrap">
+          <li class="nav-wrap" data-aos="fade-down" data-aos-duration="2000">
             <div class="nav-bar">
               <!-- <element v-bind:class = "(condition)?'class_if_is_true':'else_class'"></element> 조건에 따른 클래스 부여 방법-->
               <div class="nav-c gotosec" :class="num==0?'':'nav-ac'" v-on:click='gosection' data-target="id0"></div>
@@ -18,8 +18,8 @@
               <p class="gotosec" :class="num==2?'nav-active':''" v-on:click='gosection' data-target="id2">서문시장 야시장</p>
             </div>
           </li>
-          <li class="page-wrap"><img :src="img" alt="" class="yangju"></li>
-          <li class="txt-wrap">
+          <li class="page-wrap" data-aos="fade-up" data-aos-duration="1000"><img :src="img" alt="" class="yangju"></li>
+          <li class="txt-wrap" data-aos="fade-left" data-aos-duration="1500">
             <h3>{{sub}}</h3>
             <h3>맡은 역할 : {{role}}</h3>
             <h3>담당한 구역 : {{section}}</h3>
@@ -189,11 +189,13 @@
     cursor: pointer;
     font-size: 20px;
   }
-  @media(max-width:1280px){
-    h1{
+
+  @media(max-width:1280px) {
+    h1 {
       font-size: 48px;
     }
   }
+
   @media(max-width:1120px) {
     .pr-wrap ul {
       flex-wrap: wrap;
@@ -229,23 +231,34 @@
       width: 40%;
     }
   }
-  @media(max-width:767px){
-    .nav-wrap{
+
+  @media(max-width:767px) {
+    .nav-wrap {
       display: none;
     }
-    .page-wrap{
+
+    .page-wrap {
       margin-left: 10%;
     }
-    .pr-wrap{
+
+    .pr-wrap {
       margin-top: 30px;
     }
-    h1{
-    width: 285px;
-    /* margin-top: 50px; */
-    margin-left: 20%;
+
+    h1 {
+      width: 285px;
+      /* margin-top: 50px; */
+      margin-left: 10%;
     }
-    article{
+
+    article {
       height: 100%;
+    }
+  }
+
+  @media(max-width:400px) {
+    h1 {
+      font-size: 32px;
     }
   }
 </style>
