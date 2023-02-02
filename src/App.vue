@@ -6,6 +6,7 @@
   <project />
 
   <cloning />
+  <toy-project />
   <contact />
   <div></div>
 </template>
@@ -18,6 +19,7 @@
   import cloning from './components/cloning.vue'
   import contact from './components/contact.vue'
   import project from './components/ProjectSec.vue'
+  import ToyProject from './components/toyProject.vue'
 
 
   export default {
@@ -29,6 +31,7 @@
       project,
       cloning,
       contact,
+      ToyProject,
     }
   }
 </script>

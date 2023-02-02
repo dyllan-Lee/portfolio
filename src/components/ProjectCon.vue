@@ -19,7 +19,7 @@
             </div>
           </li>
           <li class="page-wrap" data-aos="fade-up" data-aos-duration="1000"><img :src="img" alt="" class="yangju"></li>
-          <li class="txt-wrap" data-aos="fade-left" data-aos-duration="1500">
+          <li class="txt-wrap" data-aos="fade-up" data-aos-duration="1500">
             <h3>{{sub}}</h3>
             <h3>맡은 역할 : {{role}}</h3>
             <h3>담당한 구역 : {{section}}</h3>

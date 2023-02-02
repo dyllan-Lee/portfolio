@@ -7,7 +7,7 @@
       <ul>
         <div class="w33 mt50">
           <h1 id='About'>About me</h1>
-          <img src="../img/elipse6.png" class="circle" data-aos="fade-up" data-aos-duration="1000">
+          <img src="../img/pic.jpeg" class="circle" data-aos="fade-up" data-aos-duration="1000">
           <div class="txt-wrap">
             <h2>Step Up 하는</h2>
             <h2>개발자 이석진 입니다.</h2>
@@ -168,11 +168,11 @@
     display: block;
     margin-left: 20%;
     margin-top: 60px;
-    width: 55%;
+    width: 50%;
   }
 
   .txt-wrap {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .skill ul {
