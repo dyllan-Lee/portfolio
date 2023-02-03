@@ -16,19 +16,19 @@
         <div class="w33 mtre">
           <div class="PI-wrap" data-aos="fade-up" data-aos-duration="1000">
             <h3>Personal Info</h3>
-            <p>1994.08.02</p><br>
-            <p>서울</p><br>
-            <p>dltjrwls0802@gmail.com</p><br>
-            <p>010-9290-8159</p><br>
+            <p>1994.08.02</p>
+            <p>서울</p>
+            <p>dltjrwls0802@gmail.com</p>
+            <p>010-9290-8159</p>
           </div>
           <div class="ED-wrap" data-aos="fade-up" data-aos-duration="1000">
             <h3>Education</h3>
             <p>서울 대진고등학교 졸업<br>
               <p class="date">-2013.02</p>
-            </p><br>
+            </p>
             <p>서울 상명대학교 소비자주거학과 졸업<br>
               <p class="date">-2020.07</p>
-            </p><br>
+            </p>
             <p>노원 그린컴퓨터아카데미<br> [디지털컨버전스]Vue활용 프론트엔드 웹개발자 양성과정<br>
               <p class="date">-2023.02</p>
             </p><br>
@@ -40,26 +40,26 @@
             <div class="EP-flex">
               <p>자연대학교 23대학생회부원<br>
                 <p class="date">-2013.03~12</p>
-              </p><br>
+              </p>
               <p>자연대학교 26대학생회 홍보부차장<br>
                 <p class="date">-2016.03~12</p>
-              </p><br>
+              </p>
               <p>경영대학교 9대 학생회선거운동본부장<br>
                 <p class="date">-2016.11</p>
-              </p><br>
+              </p>
               <p>45대 총학생회 보궐선거운동원<p class="date">-2017.02~04</p>
-              </p><br>
+              </p>
             </div>
             <div class="EP-flex">
               <p>상명대학교 축제기획단<br>
                 <p class="date">-2017.05~06</p>
-              </p><br>
+              </p>
               <p>소비자주거학과 학생회 총무<br>
                 <p class="date">-2018.03~12</p>
-              </p><br>
+              </p>
               <p>Kaplan International school Ki Harvard Square<br>
                 <p class="date">-2019.07~2020.01</p>
-              </p><br>
+              </p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
 <style scoped>
   section {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     border-bottom: 1px solid rgba(80, 80, 80, 0.1);
   }
 
@@ -132,11 +132,12 @@
     font-weight: bold;
     color: #036;
     margin-left: 6.5%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   p {
     font-size: 20px;
+    margin-bottom: 15px;
   }
 
   .date {
@@ -167,7 +168,7 @@
   .circle {
     display: block;
     margin-left: 20%;
-    margin-top: 60px;
+    margin-top: 10px;
     width: 50%;
   }
 
@@ -183,6 +184,7 @@
   .skill ul li {
     width: 33%;
     text-align: start;
+    margin-bottom: 20px;
   }
 
   .skill-left {
