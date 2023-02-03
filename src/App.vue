@@ -20,7 +20,7 @@
   import contact from './components/contact.vue'
   import project from './components/ProjectSec.vue'
   import ToyProject from './components/toyProject.vue'
-
+  import "@/assets/reset1.css" 
 
   export default {
     name: 'App',

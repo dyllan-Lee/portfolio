@@ -58,7 +58,7 @@
   }
 
   div>img {
-    width: 100%;
+    width: 70%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
